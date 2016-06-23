@@ -1,6 +1,6 @@
 {
-  "name": "photobor",
-  "short_name": "photobor",
+  "name": "Photobor",
+  "short_name": "Photobor",
   "start_url": "/",
   "display": "standalone"
 }

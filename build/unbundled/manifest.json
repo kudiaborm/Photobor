@@ -1,0 +1,6 @@
+{
+  "name": "photobor",
+  "short_name": "photobor",
+  "start_url": "/",
+  "display": "standalone"
+}

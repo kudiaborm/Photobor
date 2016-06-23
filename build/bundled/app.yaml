@@ -1,0 +1,31 @@
+application: photograbor
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+
+- url: /(.*\.(gif|png|jpg))
+  static_files: \1
+  upload: (.*\.(gif|png|jpg))
+
+- url: /pho/(.*\.?)/(.*\.(gif|png|jpg))
+  static_files: dyn/(.*\.?)/\1
+  upload: pho/(.*\.?)/(.*\.(gif|png|jpg))
+
+- url: /(.*\.(ico|js|css|php))
+  static_files: \1
+  upload: (.*\.(ico|js|css|php))
+
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt 
+
+- url: .*
+  script: photograbor.app
+
+libraries:
+- name: PIL
+  version: latest
