@@ -2,12 +2,34 @@
   "name": "photobor",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "iron-pages": "^1.0.7",
+    "paper-tabs": "^1.6.2",
+    "paper-icon-button": "^1.1.2",
+    "paper-progress": "^1.0.9",
+    "paper-toolbar": "^1.1.5",
+    "iron-image": "PolymerElements/iron-image#^1.2.3"
   },
-  "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-    "web-component-tester": "^4.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-  }
+  "devDependencies": {},
+  "homepage": "https://github.com/kudiaborm/photobor",
+  "authors": [
+    "Marley Kudiabor <kudiaborm@gmail.com>"
+  ],
+  "description": "Marley Kudiabor",
+  "keywords": [
+    "photography",
+    "orlando",
+    "photographer",
+    "marley",
+    "kudiabor"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

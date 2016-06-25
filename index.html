@@ -6,13 +6,9 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <!-- Manifest information for web app / add to homescreen info -->
   <link rel="manifest" href="/manifest.json">
-  <!-- bow components base dependencies -->
-  <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- import the source or rather the main page -->
-  <link rel="import" href="/src/Photobor-app/Photobor-app.html">
+  <link rel="import" href="/src/photobor-app.html">
 
-</head>
-  <photobor-app></photobor-app>
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -24,4 +20,23 @@
     };
     firebase.initializeApp(config);
   </script>
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', 'Noto', sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      background-color: #eee;
+    }
+
+  </style>
+
+</head>
+<body class="fullbleed">
+
+  <photobor-app></photobor-app>
+
+</body>
 </html>

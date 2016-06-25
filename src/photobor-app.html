@@ -1,0 +1,220 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/paper-styles/typography.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html"
+
+<link rel="import" href="work-view.html">
+
+<dom-module id="photobor-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      .self-end {
+        /* This mixin (from iron-flex-layout) aligns the tabs to the
+           bottom of the toolbar. */
+        @apply(--layout-self-end);
+      }
+
+      /*paper-header-panel {*/
+        /*--paper-header-panel-shadow: {*/
+          /*height: 6px;*/
+          /*bottom: -6px;*/
+          /*box-shadow: inset 0px 500px 600px -300px rgba(0, 0, 0, 0.4);*/
+        /*};*/
+      /*}*/
+
+      paper-tabs {
+        --paper-tabs-selection-bar-color: var(--paper-blue-a100);
+        background-color: var(--paper-indigo-500);
+        color: white;
+      }
+
+      paper-tab {
+        --paper-tab-ink: var(--paper-indigo-300);
+
+      }
+      .guide-section {
+        background: white;
+        margin: 24px auto;
+        max-width: 800px;
+        padding-top: 1px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      }
+
+      .guide-section p {
+        margin: 16px 20px;
+      }
+
+      .guide-section iron-image{
+        margin: 5px;
+      }
+
+    </style>
+
+
+    <paper-header-panel class="flex" mode="waterfall">
+      <paper-toolbar class="tall paper-header">
+        <paper-tabs selected="0" class="bottom self-end fit">
+          <paper-tab>WORK</paper-tab>
+          <paper-tab>ABOUT</paper-tab>
+          <paper-tab>CONTACT</paper-tab>
+        </paper-tabs>
+      </paper-toolbar>
+      <div id="mainContainer" class="content fit">
+        <section class="guide-section">
+          <iron-image fade alt="Marley Kudiabor"  class="sized" src="../img/pho/concrete/3.jpg"></iron-image>
+        </section>
+                <section class="guide-section">
+          <p class="style-scope">"Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+                <section class="guide-section">
+          <p class="style-scope">"Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+                <section class="guide-section">
+          <p class="style-scope">"Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+                <section class="guide-section">
+          <p class="style-scope">"Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+                <section class="guide-section">
+          <p class="style-scope">"Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+                <section class="guide-section">
+          <p class="style-scope">"Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae
+            vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia
+            non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut
+            enim ad minima veniam, quis nostrum
+            exercitationem ullam corporis suscipit
+            laboriosam, nisi ut aliquid ex ea commodi
+            consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam
+            nihil molestiae consequatur, vel illum qui
+            dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </section>
+
+      </div>
+    </paper-header-panel>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'photobor-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'photobor-app',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
